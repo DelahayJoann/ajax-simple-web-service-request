@@ -1,10 +1,14 @@
 (() => {
-    document.body.style.backgroundColor = "black";
+    //document.body.style.backgroundColor = "black";
+    document.body.style.backgroundImage = "url('./img/tree.jpg')";
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = 'cover';
     document.body.style.color = 'white';
     document.body.style.fontFamily = "'Sansita Swashed', cursive";
 
     var domMainTag = document.getElementById('content');
     domMainTag.style.height = "100vh";
+    domMainTag.style.margin = '0px';
     domMainTag.setAttribute('class','row');
 
     var xhr = new XMLHttpRequest();
@@ -35,11 +39,10 @@
             img.setAttribute('class','col-6  justify-content-center align-middle');
             img.setAttribute('src',photoURL);
             img.style.display = 'block';
-            img.style.maxHeight = "300px";
-            img.style.maxWidth = '200px';
-            img.style.width = 'auto';
-            img.style.height = 'auto';
+            img.style.height = "200px";
+            img.style.width = '200px';
             img.style.margin = '0px auto';
+            img.style.borderRadius = '200px';
 
             blockImage.appendChild(img);
 
